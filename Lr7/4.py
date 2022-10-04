@@ -1,0 +1,5 @@
+my_file1 = open("text.txt", "r")
+text = my_file1.read()
+print('''Кол-во букв: ''', sum(map(str.isalpha,text)))
+print('''Кол-во слов: ''', len(text.split()))
+print('''Кол-во строк: ''', len(text.split('\n')))
